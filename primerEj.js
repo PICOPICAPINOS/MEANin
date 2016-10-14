@@ -1,16 +1,14 @@
-function miFunConVar(){
-    var x= "Esta variable es local";
-    for(var i=0 ;i< ; ++i){
-        console.log("Valor de i: " + i);
-    }
-    console.log("valor de i: " + i);
-}
 
-function miFunConLet(){
-    let x= "Esta variable es local";
-    for(let i=0 ;i< ; ++i){
-        console.log("Valor de i: " + i);
+
+function suma(a,b){
+    if(arguments.length<2){
+        console.log("Hacen falta dos argumentos como minimo");
+     } else {
+        var result = 0;
+        for(var i=0; i < arguments.length; i++){ 
+                     
+                result +=arguments[i];}       
+        console.log(result);      
     }
-    //TODO: Buscar una cond para saber si existe i
-    //console.log("valor de i: " + i);
-}
+};
+suma(2,4,2,20)
